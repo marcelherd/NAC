@@ -15,28 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ueb2_1_Matrix.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ueb2_2_Vektor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ueb2_3_Vektor2D.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClCompile Include="uebung3\ueb3_1_Matrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uebung3\ueb3_2_Vektor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uebung3\ueb3_4_Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uebung3\ueb3_4_Vektor2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ueb2_1_Matrix.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ueb2_2_Vektor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ueb2_3_Vektor2D.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ueb2_4_Application.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClInclude Include="uebung3\ueb3_1_Matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uebung3\ueb3_2_Vektor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uebung3\ueb3_4_Vektor2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
