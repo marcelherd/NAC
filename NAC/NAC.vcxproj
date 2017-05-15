@@ -19,15 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="uebung3\ueb3_1_Matrix.h" />
-    <ClInclude Include="uebung3\ueb3_2_Vektor.h" />
-    <ClInclude Include="uebung3\ueb3_4_Vektor2D.h" />
+    <ClCompile Include="uebung4+\Matrix.cpp" />
+    <ClCompile Include="uebung4+\Application.cpp" />
+    <ClCompile Include="uebung4+\Vektor.cpp" />
+    <ClCompile Include="uebung4+\Vektor2D.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="uebung3\ueb3_1_Matrix.cpp" />
-    <ClCompile Include="uebung3\ueb3_2_Vektor.cpp" />
-    <ClCompile Include="uebung3\ueb3_4_Application.cpp" />
-    <ClCompile Include="uebung3\ueb3_4_Vektor2D.cpp" />
+    <ClInclude Include="uebung4+\Matrix.h" />
+    <ClInclude Include="uebung4+\Vektor.h" />
+    <ClInclude Include="uebung4+\Vektor2D.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{8A711F55-324D-4683-BD31-3EB98975F676}</ProjectGuid>

@@ -15,27 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="uebung3\ueb3_1_Matrix.cpp">
+    <ClCompile Include="uebung4\Matrix.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="uebung3\ueb3_2_Vektor.cpp">
+    <ClCompile Include="uebung4\Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="uebung3\ueb3_4_Application.cpp">
+    <ClCompile Include="uebung4\Vektor2D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="uebung3\ueb3_4_Vektor2D.cpp">
+    <ClCompile Include="uebung4\Vektor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="uebung3\ueb3_1_Matrix.h">
+    <ClInclude Include="uebung4\Matrix.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="uebung3\ueb3_2_Vektor.h">
+    <ClInclude Include="uebung4\Vektor2D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="uebung3\ueb3_4_Vektor2D.h">
+    <ClInclude Include="uebung4\Vektor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
