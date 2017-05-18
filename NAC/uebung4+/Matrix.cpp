@@ -4,22 +4,23 @@
 
 int Matrix::counter = 0;
 
-Matrix::Matrix()
-	: m_Zeilen(2), m_Spalten(1)
+Matrix::Matrix(int m, int n)
 {
-	/*std::cout << "Standardkonstruktor von Matrix wurde aufgerufen" << std::endl;
+	std::cout << "Matrix(m, n) Konstruktor" << std::endl;
 
-	for (int i = 0; i < (m_Zeilen * m_Spalten); i++) {
-		m_Element[i] = 0;
-	}*/
+	m_Zeilen = m;
+	m_Spalten = n;
+	m_Element = new float[m * n];
+
 	counter++;
 }
 
 Matrix::~Matrix()
 {
-	/*std::cout << "matrix (";
-	ausgabe();
-	std::cout << ") wird zerstört" << std::endl;*/
+	std::cout << "Matrix Destruktor" << std::endl;
+
+	// delete[] m_Element;
+
 	counter--;
 }
 

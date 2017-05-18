@@ -9,10 +9,10 @@ protected:
 	int m_Zeilen;
 	int m_Spalten;
 
-	float m_Element[2];
+	float *m_Element;
 
 public:
-	Matrix();
+	Matrix(int m, int n);
 	virtual ~Matrix();
 
 	static int getCounter();

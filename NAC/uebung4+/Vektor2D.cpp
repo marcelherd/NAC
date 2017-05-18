@@ -3,16 +3,18 @@
 #include "Vektor2D.h"
 
 Vektor2D::Vektor2D()
+	: Vektor(2)
 {
-
+	std::cout << "Vektor2D() Konstruktor" << std::endl;
 }
 
 Vektor2D::~Vektor2D()
 {
-
+	std::cout << "Vektor2D Destruktor" << std::endl;
 }
 
 Vektor2D::Vektor2D(float x, float y)
+	: Vektor(2)
 {
 	m_Element[0] = x;
 	m_Element[1] = y;

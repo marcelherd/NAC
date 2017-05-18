@@ -5,7 +5,7 @@
 class Vektor : public Matrix
 {
 public:
-	Vektor();
+	Vektor(int spalten);
 	virtual ~Vektor();
 
 	float betrag();

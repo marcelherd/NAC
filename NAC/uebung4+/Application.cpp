@@ -4,43 +4,29 @@
 
 #include "Vektor2D.h"
 
-void ausgeben(std::string name, Vektor2D* vektor);
+void wait();
 
 int main(int argc, char* argv[])
 {
 	std::setlocale(LC_ALL, "german");
 
-	{
-		Vektor2D v(1, 2), w(3, 4);
-		Matrix M;
-		Matrix* Mpointer;
-		M = v;
-		Mpointer = &v;
-		std::cout << "Ausgabe von M und über Mpointer" << std::endl;
-		M.ausgabe();
-		Mpointer->ausgabe();
-		v.addiere(w);
-		std::cout << "Ausgabe von v nach Addieren" << std::endl;
-		v.ausgabe();
-		std::cout << "Ausgabe von M/Mpointer nach Add." << std::endl;
-		M.ausgabe();
-		Mpointer->ausgabe();
-	}
+	Vektor2D vectors[3];
 
-	std::cout << "Anzahl Instanzen=" << Matrix::getCounter() << std::endl;
+	Vektor2D* varr[2];
+	varr[0] = new Vektor2D(2, 3);
+	varr[1] = new Vektor2D(-2, 1);
+	varr[0]->addiere(*(varr[1]));
+	varr[0]->ausgabe();
+	delete varr[0];
+	delete varr[1];
 
-	Vektor2D x(1, 1), y(-5, 0);
-
-	std::cout << "Winkel zwischen x und y = " << x.winkel(y) << "°" << std::endl;
-
-	for (;;);
+	wait();
 
 	return 0;
 }
 
-void ausgeben(std::string name, Vektor2D* vektor)
+void wait()
 {
-	std::cout << "Vektor " << name << " = ";
-	vektor->ausgabe();
-	std::cout << std::endl;
+	int i;
+	std::cin >> i;
 }
