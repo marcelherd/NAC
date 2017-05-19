@@ -15,27 +15,33 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="uebung4\Matrix.cpp">
+    <ClCompile Include="uebung4+\Matrix.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="uebung4\Application.cpp">
+    <ClCompile Include="uebung4+\Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="uebung4\Vektor2D.cpp">
+    <ClCompile Include="uebung4+\Vektor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="uebung4\Vektor.cpp">
+    <ClCompile Include="uebung4+\Vektor2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uebung4+\Gerade2D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="uebung4\Matrix.h">
+    <ClInclude Include="uebung4+\Matrix.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="uebung4\Vektor2D.h">
+    <ClInclude Include="uebung4+\Vektor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="uebung4\Vektor.h">
+    <ClInclude Include="uebung4+\Vektor2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uebung4+\Gerade2D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

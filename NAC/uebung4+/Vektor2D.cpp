@@ -20,13 +20,13 @@ Vektor2D::Vektor2D(float x, float y)
 	m_Element[1] = y;
 }
 
-void Vektor2D::kopiereIn(Vektor2D *zielvar)
+void Vektor2D::kopiereIn(Vektor2D *zielvar) const
 {
 	zielvar->m_Element[0] = m_Element[0];
 	zielvar->m_Element[1] = m_Element[1];
 }
 
-void Vektor2D::ausgabe()
+void Vektor2D::ausgabe() const
 {
 	std::cout << "Vektor2D:";
 	Matrix::ausgabe();

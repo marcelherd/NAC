@@ -29,7 +29,7 @@ int Matrix::getCounter()
 	return counter;
 }
 
-void Matrix::ausgabe()
+void Matrix::ausgabe() const
 {
 	for (int i = 0; i < (m_Zeilen * m_Spalten); i++) {
 		std::cout << m_Element[i] << " ";

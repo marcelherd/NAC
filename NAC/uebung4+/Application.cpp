@@ -2,7 +2,7 @@
 #include <iostream>
 #include <clocale>
 
-#include "Vektor2D.h"
+#include "Gerade2D.h"
 
 void wait();
 
@@ -19,6 +19,8 @@ int main(int argc, char* argv[])
 	varr[0]->ausgabe();
 	delete varr[0];
 	delete varr[1];
+
+	std::cout << Gerade2D(Vektor2D(-3, -4)).aufGerade(Vektor2D(4, -3)) << std::endl;
 
 	wait();
 

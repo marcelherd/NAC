@@ -17,5 +17,5 @@ public:
 
 	static int getCounter();
 
-	virtual void ausgabe();
+	virtual void ausgabe() const;
 };

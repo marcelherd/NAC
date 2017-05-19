@@ -9,6 +9,6 @@ public:
 	Vektor2D(float x, float y);
 	virtual ~Vektor2D();
 
-	void kopiereIn(Vektor2D *zielvar);
-	void ausgabe();
+	void kopiereIn(Vektor2D *zielvar) const;
+	void ausgabe() const;
 };
