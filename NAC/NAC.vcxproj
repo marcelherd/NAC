@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="uebung4+\Gerade2D.cpp" />
+    <ClCompile Include="uebung4+\geradenTest.cpp" />
     <ClCompile Include="uebung4+\Matrix.cpp" />
     <ClCompile Include="uebung4+\Application.cpp" />
     <ClCompile Include="uebung4+\Vektor.cpp" />

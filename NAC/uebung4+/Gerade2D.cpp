@@ -22,7 +22,7 @@ float Gerade2D::gerichteterAbstand(Vektor2D v) const
 bool Gerade2D::aufGerade(const Vektor2D &x) const
 {
 	// TODO
-	return true;
+	return (gerichteterAbstand(x) == 0.0f);
 }
 
 void Gerade2D::normale(const Vektor2D &normale)

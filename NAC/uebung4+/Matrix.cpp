@@ -15,13 +15,41 @@ Matrix::Matrix(int m, int n)
 	counter++;
 }
 
+Matrix::Matrix(const Matrix &other)
+{
+	std::cout << "Matrix(&other) Konstruktor" << std::endl;
+
+	m_Zeilen = other.m_Zeilen;
+	m_Spalten = other.m_Spalten;
+	m_Element = new float[m_Zeilen * m_Spalten];
+
+	counter++;
+}
+
 Matrix::~Matrix()
 {
 	std::cout << "Matrix Destruktor" << std::endl;
 
-	// delete[] m_Element;
+	delete[] m_Element;
 
 	counter--;
+}
+
+Matrix& Matrix::operator=(const Matrix &other)
+{
+	if (this != &other) {
+		delete[] m_Element;
+
+		m_Zeilen = other.m_Zeilen;
+		m_Spalten = other.m_Spalten;
+		m_Element = new float[m_Zeilen * m_Spalten];
+
+		for (int i = 0; i < (m_Zeilen * m_Spalten); i++) {
+			m_Element[i] = other.m_Element[i];
+		}
+	}
+
+	return *this;
 }
 
 int Matrix::getCounter()

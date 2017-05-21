@@ -13,7 +13,10 @@ protected:
 
 public:
 	Matrix(int m, int n);
+	Matrix(const Matrix &other);
 	virtual ~Matrix();
+
+	Matrix& operator=(const Matrix &other);
 
 	static int getCounter();
 
