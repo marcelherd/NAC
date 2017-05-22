@@ -5,12 +5,7 @@
 Vektor2D::Vektor2D()
 	: Vektor(2)
 {
-	std::cout << "Vektor2D() Konstruktor" << std::endl;
-}
 
-Vektor2D::~Vektor2D()
-{
-	std::cout << "Vektor2D Destruktor" << std::endl;
 }
 
 Vektor2D::Vektor2D(float x, float y)
@@ -20,6 +15,38 @@ Vektor2D::Vektor2D(float x, float y)
 	m_Element[1] = y;
 }
 
+Vektor2D::Vektor2D(const Vektor2D &other)
+	: Vektor(2)
+{
+	other.kopiereIn(this);
+}
+
+Vektor2D::~Vektor2D()
+{
+
+}
+
+Vektor2D& Vektor2D::operator+(const Vektor2D &other) const
+{
+	float x = m_Element[0] + other.m_Element[0];
+	float y = m_Element[1] + other.m_Element[1];
+
+	Vektor2D* result = new Vektor2D(x, y);
+
+	return *result;
+}
+
+Vektor2D& Vektor2D::operator*(const float number) const
+{
+	float x = m_Element[0] * number;
+	float y = m_Element[1] * number;
+
+	Vektor2D* result = new Vektor2D(x, y);
+
+	return *result;
+}
+
+
 void Vektor2D::kopiereIn(Vektor2D *zielvar) const
 {
 	zielvar->m_Element[0] = m_Element[0];
@@ -28,7 +55,7 @@ void Vektor2D::kopiereIn(Vektor2D *zielvar) const
 
 void Vektor2D::ausgabe() const
 {
-	std::cout << "Vektor2D:";
+	std::cout << "Vektor2D: ";
 	Matrix::ausgabe();
 }
 

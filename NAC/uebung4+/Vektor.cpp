@@ -9,12 +9,12 @@
 Vektor::Vektor(int spalten)
 	: Matrix(1, spalten)
 {
-	std::cout << "Vektor(m) Konstruktor" << std::endl;
+
 }
 
 Vektor::~Vektor()
 {
-	std::cout << "Vektor Destruktor" << std::endl;
+
 }
 
 float Vektor::betrag() const
