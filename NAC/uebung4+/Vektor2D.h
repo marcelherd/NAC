@@ -11,6 +11,7 @@ public:
 	virtual ~Vektor2D();
 
 	Vektor2D& operator+(const Vektor2D &other) const;
+	Vektor2D& operator-(const Vektor2D &other) const;
 	Vektor2D& operator*(const float number) const;
 
 	void kopiereIn(Vektor2D *zielvar) const;

@@ -8,13 +8,12 @@ private:
 protected:
 	int m_Zeilen;
 	int m_Spalten;
-
 	float *m_Element;
 
 public:
 	Matrix(int m, int n);
 	Matrix(const Matrix &other);
-	virtual ~Matrix();
+	virtual ~Matrix(); 
 
 	Matrix& operator=(const Matrix &other);
 

@@ -36,6 +36,16 @@ Vektor2D& Vektor2D::operator+(const Vektor2D &other) const
 	return *result;
 }
 
+Vektor2D& Vektor2D::operator-(const Vektor2D &other) const
+{
+	float x = m_Element[0] - other.m_Element[0];
+	float y = m_Element[1] - other.m_Element[1];
+
+	Vektor2D* result = new Vektor2D(x, y);
+
+	return *result;
+}
+
 Vektor2D& Vektor2D::operator*(const float number) const
 {
 	float x = m_Element[0] * number;
