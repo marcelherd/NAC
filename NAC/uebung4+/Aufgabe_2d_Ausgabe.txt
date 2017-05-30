@@ -1,0 +1,11 @@
+Vektor v1 (4, 0)
+Minima: (6.6257, 0)
+Funktionswert am Minima: -0.127733
+
+Vektor v2 (4, 1)
+Minima: (6.46819, 1.50407)
+Funktionswert am Minima: -0.127632
+
+Vektor v3 (3.0, 1.0)
+Minima: (-0.9538, 0.0184605)
+Funktionswert am Minima: -0.999587
