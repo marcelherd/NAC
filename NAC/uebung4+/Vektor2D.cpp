@@ -76,3 +76,8 @@ void tausche(Vektor2D *a, Vektor2D *b)
 	b->kopiereIn(a);
 	temp.kopiereIn(b);
 }
+
+std::ostream& operator<<(std::ostream &stream, const Vektor2D &v)
+{
+	return stream << "(" << v.m_Element[0] << ", " << v.m_Element[1] << ")";
+}

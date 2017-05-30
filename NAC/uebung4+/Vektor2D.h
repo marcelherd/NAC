@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Vektor.h"
+#include <iostream>
 
 class Vektor2D : public Vektor
 {
@@ -17,4 +18,5 @@ public:
 	void kopiereIn(Vektor2D *zielvar) const;
 	void ausgabe() const;
 
+	friend std::ostream& operator<<(std::ostream& stream, const Vektor2D &v);
 };
