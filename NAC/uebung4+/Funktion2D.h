@@ -2,7 +2,7 @@
 
 #include "Vektor2D.h"
 
-#define ABSTAND_H 0.001f
+#define ABSTAND_H 0.00001f
 
  class Funktion2D
  {
@@ -27,4 +27,4 @@
  // @param tol Toleranzwert, der mit der Länge des Gradienten verglichen wird
  // @param ftol Toleranzwert
  // @return Die Stelle eines Minimums
- Vektor2D const& minimieren2D(const Funktion2D &f, const Vektor2D &start, float step, int maxIterations, float tol = 0.5f, float ftol = 0.5f);
+ Vektor2D const& minimieren2D(const Funktion2D &f, const Vektor2D &start, float step, int maxIterations, float tol = 0.001f, float ftol = 0.0003f);

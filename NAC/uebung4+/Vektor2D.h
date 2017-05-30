@@ -16,4 +16,5 @@ public:
 
 	void kopiereIn(Vektor2D *zielvar) const;
 	void ausgabe() const;
+
 };
