@@ -12,8 +12,8 @@ float Funktion2D::operator()(const Vektor2D &v) const
 
 Vektor2D const& gradient2D(const Funktion2D &f, const Vektor2D &v)
 {
-	float fx = (( f( *(new Vektor2D(ABSTAND_H, 0)) + v) - f(v)) / ABSTAND_H);
-	float fy = (( f( *(new Vektor2D(0, ABSTAND_H)) + v) - f(v)) / ABSTAND_H);
+	float fx = (( f( Vektor2D(ABSTAND_H, 0) + v) - f(v)) / ABSTAND_H);
+	float fy = (( f( Vektor2D(0, ABSTAND_H) + v) - f(v)) / ABSTAND_H);
 
 	if (isnan(fx) || isnan(fy)) {
 		throw std::domain_error("Definitionsluecke");
