@@ -6,7 +6,7 @@
 
 float Funktion2D::operator()(const Vektor2D &v) const
 {
-	Vektor2D &temp = v + Vektor2D(1, 0);
+	Vektor2D temp = v + Vektor2D(1, 0);
 	return -(sin(temp.betrag()) / temp.betrag());
 }
 
@@ -19,7 +19,7 @@ Vektor2D const& gradient2D(const Funktion2D &f, const Vektor2D &v)
 		throw std::domain_error("Definitionsluecke");
 	}
 	
-	return *(new Vektor2D(fx, fy));
+	return Vektor2D(fx, fy);
 }
 
 Vektor2D const& minimieren2D(const Funktion2D &f, const Vektor2D &start, float step, int maxIterations, float tol, float ftol)

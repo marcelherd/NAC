@@ -13,6 +13,9 @@ int main(int argc, char* argv[])
 
 	Vektor2D v1(4, 0);
 	Vektor2D v2(4, 1);
+
+	std::cout << v1 + v2 << std::endl;
+
 	Vektor2D v3(3.0f, 1.0f);
 
 	ausgabe(f, v1, "Vektor v1 (4, 0)");

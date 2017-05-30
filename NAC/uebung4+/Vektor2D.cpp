@@ -26,36 +26,23 @@ Vektor2D::~Vektor2D()
 
 }
 
-Vektor2D& Vektor2D::operator+(const Vektor2D &other) const
+Vektor2D Vektor2D::operator+(const Vektor2D &other) const
 {
-	float x = m_Element[0] + other.m_Element[0];
-	float y = m_Element[1] + other.m_Element[1];
-
-	Vektor2D* result = new Vektor2D(x, y);
-
-	return *result;
+	return Vektor2D(m_Element[0] + other.m_Element[0],
+		m_Element[1] + other.m_Element[1]);
 }
 
-Vektor2D& Vektor2D::operator-(const Vektor2D &other) const
+Vektor2D Vektor2D::operator-(const Vektor2D &other) const
 {
-	float x = m_Element[0] - other.m_Element[0];
-	float y = m_Element[1] - other.m_Element[1];
-
-	Vektor2D* result = new Vektor2D(x, y);
-
-	return *result;
+	return Vektor2D(m_Element[0] - other.m_Element[0],
+		m_Element[1] - other.m_Element[1]);
 }
 
-Vektor2D& Vektor2D::operator*(const float number) const
+Vektor2D Vektor2D::operator*(const float number) const
 {
-	float x = m_Element[0] * number;
-	float y = m_Element[1] * number;
-
-	Vektor2D* result = new Vektor2D(x, y);
-
-	return *result;
+	return Vektor2D(m_Element[0] * number,
+		m_Element[1] * number);
 }
-
 
 void Vektor2D::kopiereIn(Vektor2D *zielvar) const
 {
