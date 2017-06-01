@@ -10,7 +10,7 @@ float Funktion2D::operator()(const Vektor2D &v) const
 	return -(sin(temp.betrag()) / temp.betrag());
 }
 
-Vektor2D const& gradient2D(const Funktion2D &f, const Vektor2D &v)
+Vektor2D gradient2D(const Funktion2D &f, const Vektor2D &v)
 {
 	float fx = (( f( Vektor2D(ABSTAND_H, 0) + v) - f(v)) / ABSTAND_H);
 	float fy = (( f( Vektor2D(0, ABSTAND_H) + v) - f(v)) / ABSTAND_H);

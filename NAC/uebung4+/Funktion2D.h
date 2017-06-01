@@ -16,7 +16,7 @@
  // @param f Die Funktion
  // @param v Die Stelle, an der der Gradient berechnet werden soll
  // @return Gradient der Funktion f an Stelle v
- Vektor2D const& gradient2D(const Funktion2D &f, const Vektor2D &v);
+ Vektor2D gradient2D(const Funktion2D &f, const Vektor2D &v);
 
  // Ermittelt die Stelle eines Minimums mittels des Gradientenabstiegsverfahrens
  // 
