@@ -1,3 +1,3 @@
-# NAC
+# Numerische Anwendungen in C/C++ (NAC)
 
-Übungen
+Code für alle C/C++ Übungen
